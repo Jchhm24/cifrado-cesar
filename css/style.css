@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    padding:10px;
+    height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", serif;
+}
+
+section{
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #00000025;    
+    border: 1px solid #00000015;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.container-titles{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1{
+    font-size:clamp(20px, 32px , 32px);
+    margin-bottom: 20px;
+    margin: 0;
+}
+
+.container-titles > span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #00000050;
+}
+
+.container-message{
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.container-message > textarea{
+    width: 100%;
+    outline: none;
+    border: 2px solid #00000050;
+    border-width: 0px 0px 2px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    resize: none;   
+    height: min-content; 
+}
+
+.container-message > span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #00000050;
+}
+
+.container-desplazamiento{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-desplazamiento > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-desplazamiento > div > input{
+    width: 75%;
+    outline: none;
+}
+
+.container-resultado{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-resultado > textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    resize: none;   
+    height: min-content; 
+    background-color: #00000015;
+    border-radius: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.nota{
+    font-size: 12px;
+    color: #ff000075;
+    text-align: center;
+}

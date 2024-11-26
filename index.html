@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cifrado Cesar</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h1 class="container-titles" >
+                Cifrado Cesar
+            </h1>
+            <span>
+                Por: Julio Chan
+            </span>
+        </div>
+
+        <div class="container-message" >
+            <textarea id="text" placeholder="Escribe algunas palabra" maxlength="150"></textarea>
+            <span id="message-length" >
+                0/150
+            </span>
+        </div>
+
+        <div class="container-desplazamiento" >
+            <span>
+                Desplazamiento (0-27)
+            </span>
+            <div>
+                <input type="range" name="" id="desplazamiento"
+                    min="0" max="26" value="0"
+                >
+                <span id="desplazamiento-value" >
+                    0
+                </span>
+            </div>
+        </div>
+        <div class="container-resultado" >
+            <span>
+                Resultado cifrado:
+            </span>
+
+            <textarea id="text-cifrado" readonly></textarea>
+        </div>
+
+        <span class="nota" >
+            Caracteres que no sean ascii no serán cifrados
+        </span>
+    </section>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
